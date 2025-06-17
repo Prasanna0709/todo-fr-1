@@ -8,6 +8,9 @@ const Cardscontainer = () => {
   const bgColors = ["bg-sky-300", "bg-red-300", "bg-green-300", "bg-yellow-300", "bg-purple-300"];
   const {data,isLoading,isError,error} =useGetAllTasks();
 
+  //editing values
+  const [editingIndex , setEditingIndex] = useState(null);
+
   useEffect(()=>{
     if(Array.isArray(data) && data.length > 0){
       const chunks = [];
@@ -49,7 +52,7 @@ const Cardscontainer = () => {
        {datas.map((row,index)=>(
           <div className="flex h-[45vh] w-[90%] my-5 justify-around items-center">
             {row.map((col)=>(
-               <div><Card bgColor={bgColors[assignColor()]} data={col}/></div>
+               <div><Card bgColor={bgColors[assignColor()]} data={col} editingIndex={editingIndex} setEditingIndex={setEditingIndex}/></div>
             ))}
          </div>
        ))}
