@@ -37,7 +37,7 @@ const Addtaskform = ({onCloseForm}) => {
         <form className="flex flex-col h-[530px] w-[430px] px-8 py-5 bg-white rounded-xl" onSubmit={handleSubmit}>
             <div className="flex justify-between items-center py-4">
                 <p className="text-[22px] font-semibold">Add New Task</p>
-                <p className="text-[16px] font-bold mr-3 cursor-pointer" onClick={handleClose}><X/></p>
+                <button className="text-[16px] font-bold mr-3 cursor-pointer" onClick={handleClose} type="button"><X/></button>
             </div>
             {/* task name */}
             <div className="flex flex-col py-2 mt-2">
@@ -69,7 +69,7 @@ const Addtaskform = ({onCloseForm}) => {
             {/* submit button */}
             <div className="flex justify-between my-2 py-5">
                 <div>
-                    <button className="py-[9px] text-[16px] font-semibold w-[160px] rounded-lg border-none bg-red-500" onClick={handleClose}>Cancel</button>
+                    <button className="py-[9px] text-[16px] font-semibold w-[160px] rounded-lg border-none bg-red-500" onClick={handleClose} type="button">Cancel</button>
                 </div>
                 <div>
                     <button className="py-[9px] w-[160px] text-[16px] font-semibold rounded-lg border-none bg-red-500" type="submit">Add Task</button>
