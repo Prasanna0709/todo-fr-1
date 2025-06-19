@@ -62,11 +62,11 @@ const Card = ({ bgColor, data, editingIndex, setEditingIndex }) => {
 
   return (
     <div
-      className={`w-[370px] relative flex flex-col shadow-lg border-2 border-white ${bgColor} ${"black"} h-[320px] rounded-xl`}
+      className={`w-[340px] sm:w-[370px] relative flex flex-col shadow-lg border-2 border-white ${bgColor} ${"black"} h-[300px] sm:h-[320px] rounded-xl`}
     >
       {/* completed blurness */}
       <div
-        className="flex flex-col h-[320px] w-[370px] absolute z-20 top-0 left-0 right-0 flex justify-center items-center backdrop-blur-md rounded-xl"
+        className="flex flex-col h-[300px] sm:h-[320px] w-[340px] sm:w-[370px] absolute z-20 top-0 left-0 right-0 flex justify-center items-center backdrop-blur-md rounded-xl"
         style={{ display: completed ? "flex" : "none" }}
       >
         <div>

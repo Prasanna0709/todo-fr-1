@@ -48,14 +48,12 @@ const Cardscontainer = () => {
   }
 
   return (
-    <div className='flex flex-col items-center w-full pt-5'>
-       {datas.map((row,index)=>(
-          <div className="flex h-[45vh] w-[90%] my-5 justify-around items-center">
-            {row.map((col)=>(
-               <div><Card bgColor={bgColors[assignColor()]} data={col} editingIndex={editingIndex} setEditingIndex={setEditingIndex}/></div>
-            ))}
-         </div>
-       ))}
+    <div className="flex h-auto w-full justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-12 sm:gap-20 py-10">
+        {data.map((value,index)=>(
+          <Card bgColor={bgColors[assignColor()]} data={value} editingIndex={editingIndex} setEditingIndex={setEditingIndex}/>
+        ))}
+      </div>
     </div>
   )
 }
