@@ -13,8 +13,9 @@
 ---
 
 ## 📸 Screenshots
-
-> (You can insert screenshots later by using `![Alt text](url)`)
+![Alt text](./public/img-3.PNG)
+![Alt text](./public/img-4.PNG)
+![Alt text](./public/img-5.PNG)
 
 ---
 

@@ -48,7 +48,7 @@ const Cardscontainer = () => {
   }
 
   return (
-    <div className="flex h-auto w-full justify-center">
+    <div className="flex min-h-[83vh] w-full justify-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-12 sm:gap-20 py-10">
         {data.map((value,index)=>(
           <Card bgColor={bgColors[assignColor()]} data={value} editingIndex={editingIndex} setEditingIndex={setEditingIndex}/>
