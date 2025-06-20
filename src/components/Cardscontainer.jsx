@@ -26,16 +26,16 @@ const Cardscontainer = () => {
 
   if(isLoading){
     return(
-      <div className="flex justify-center items-center">
-        <h1>Loading...</h1>
+      <div className="h-[90vh] w-full flex justify-center items-center">
+        <h1 className="text-[35px] font-bold text-yellow-500">Loading...</h1>
       </div>
     )
   }
 
   if(isError){
     return(
-      <div className="flex justify-center items-center">
-        <h1>Error...</h1>
+      <div className="h-[90vh] w-full flex justify-center items-center">
+        <h1 className="text-[30px] font-bold text-red-500 text-center px-3">Something went wrong...</h1>
       </div>
     )
   }

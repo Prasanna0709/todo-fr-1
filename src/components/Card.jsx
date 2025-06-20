@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const Card = ({ bgColor, data, editingIndex, setEditingIndex }) => {
   const { _id, task, description, priority, createdAt, completed } = data;
-  const { mutate: deleteTask } = useDeleteTask();
+  const { mutate: deleteTask} = useDeleteTask();
   const { mutate: editStatus } = useUpdateStatus();
   const { mutate: editTask } = useEditTask();
 

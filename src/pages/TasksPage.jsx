@@ -3,6 +3,7 @@ import Cardscontainer from "../components/Cardscontainer";
 import Addtaskform from "../components/Addtaskform";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Footer from "../components/Footer";
 
 const TasksPage = () => {
   const [showForm, setShowForm] = useState(false);
@@ -24,6 +25,7 @@ const TasksPage = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <Footer/>
     </div>
   );
 };
